@@ -1,5 +1,3 @@
-# settings.vim
-
 
 " Better Navigation
 nnoremap <silent> <C-j> :call VSCodeNotify('workbench.action.navigateDown')<CR>

@@ -94,12 +94,7 @@ vim.g.maplocalleader = ' '
 vim.g.have_nerd_font = true
 
 -- To determine if Neovim is running in VSCode
-require "options"
-require "keymaps"
-require "lazy-config"
-
 if vim.g.vscode then
-  
     vim.cmd[[source $HOME/.config/nvim/vscode/settings.vim]]
 
 else
