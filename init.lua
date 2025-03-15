@@ -91,7 +91,35 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
+
+-- To determine if Neovim is running in VSCode
+require "options"
+require "keymaps"
+require "lazy-config"
+
+if vim.g.vscode then
+  
+    vim.cmd[[source $HOME/.config/nvim/vscode/settings.vim]]
+
+else
+
+    require "alpha-config"
+    require "autopairs-config"
+    require "bufferline-config"
+    require "git-config"
+    require "hop-config"
+    require "indentline-config"
+    require "lualine-config"
+    require "lsp-config"
+    require "nvim-tree-config"
+    require "telescope-config"
+    require "toggleterm-config"
+    require "treesitter-config"
+    require "undotree-config"
+    require "whichkey"
+
+end
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
