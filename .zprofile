@@ -207,4 +207,8 @@ alias nrg="npm run graphql:generate-schema" # generate graphql schema
 alias nrp="npm run prettier"
 alias nrpf="npm run prettier:fix"
 alias nrl="npm run lint"
-alias nrlf="npm run lint:fix
+alias nrlf="npm run lint:fix"
+
+# neovim
+alias vi='nvim'
+alias vim='nvim'
